@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/jubaralam/todo-app-backend/issues"
   },
-  "homepage": "https://github.com/jubaralam/todo-app-backend#readme"
+  "homepage": "https://github.com/jubaralam/todo-app-backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5"
+  }
 }
