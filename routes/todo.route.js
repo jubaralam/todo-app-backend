@@ -8,13 +8,7 @@ todoRouter.post("/add", async (req, res) => {
   const { title, description, status, priority, dueDate, isDeleted } = req.body;
   const userId = req.user._id;
   try {
-    if (
-      !title ||
-      !description ||
-      !priority ||
-      !dueDate ||
-     
-    ) {
+    if (!title || !description || !priority || !dueDate) {
       return res.status(400).send({ message: "All fields are required" });
     }
 
