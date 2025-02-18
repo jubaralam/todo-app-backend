@@ -13,7 +13,7 @@ todoRouter.post("/add", async (req, res) => {
       !description ||
       !priority ||
       !dueDate ||
-      isDeleted === undefined
+     
     ) {
       return res.status(400).send({ message: "All fields are required" });
     }
